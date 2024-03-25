@@ -1,7 +1,6 @@
 import 'package:dashapp/pages/second_screen.dart';
 import 'package:flutter/material.dart';
 
-
 class StartScreen extends StatelessWidget {
   const StartScreen({super.key});
 
@@ -43,7 +42,6 @@ class StartScreen extends StatelessWidget {
           Center(
             child: Column(
               mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
                   children: [
@@ -53,6 +51,7 @@ class StartScreen extends StatelessWidget {
                     ),
                     const Text(
                       'Welcome to Dash app',
+                      textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 24,
