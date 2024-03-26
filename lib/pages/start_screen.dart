@@ -19,6 +19,7 @@ class StartScreen extends StatelessWidget {
                   Color(0xFF3A6FE2),
                   Color(0xFF9E7BF5),
                 ],
+                transform: GradientRotation(90),
               ),
             ),
           ),

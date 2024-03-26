@@ -18,14 +18,18 @@ class SecondScreen extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
                 decoration: BoxDecoration(
-                  border: Border.all(color: Colors.grey),
-                  borderRadius: BorderRadius.circular(8.0),
+                  border:
+                      Border.all(color: const Color(0xFF3A6FE2), width: 1.5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextField(
                   decoration: InputDecoration(
                       hintText: 'Search',
+                      hintStyle: const TextStyle(color: Color(0xFF3A6FE2)),
                       border: InputBorder.none,
                       prefixIcon: SizedBox(
+                        height: 20,
+                        width: 20,
                         child: SvgPicture.asset(
                           'assets/icons/search.svg',
                         ),

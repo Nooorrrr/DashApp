@@ -12,8 +12,8 @@ class MyWidget extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
         border: Border.all(
-          color: const Color(0xFF3A6FE2), 
-          width: 2, 
+          color: const Color(0xFF3A6FE2),
+          width: 2,
         ),
       ),
       child: Padding(
@@ -61,9 +61,9 @@ class MyWidget extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      SvgPicture.asset("assets/icons/BookmarkSimple.svg"),
-                      SvgPicture.asset("assets/icons/BookmarkSimple.svg"),
-                      SvgPicture.asset("assets/icons/BookmarkSimple.svg")
+                      SvgPicture.asset("assets/icons/like.svg"),
+                      SvgPicture.asset("assets/icons/comment.svg"),
+                      SvgPicture.asset("assets/icons/redash.svg")
                     ],
                   ),
                 ),
