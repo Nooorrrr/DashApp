@@ -1,13 +1,14 @@
 import 'package:dashapp/pages/second_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Stack(
+    return Scaffold(
+      body: Stack(
         children: [
           Container(
             height: double.infinity,
@@ -43,29 +44,32 @@ class StartScreen extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Column(
-                  children: [
-                    Image.asset(
-                      'assets/images/bigbird.png',
-                      height: 250,
-                    ),
-                    const Text(
-                      'Welcome to ',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 30,
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 50),
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'assets/images/bigbird.png',
+                        height: 250,
                       ),
-                    ),
-                    const Text(
-                      'Dash app',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 24,
+                      const Text(
+                        'Welcome to ',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold),
                       ),
-                    ),
-                  ],
+                      const Text(
+                        'Dash app',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
                 ),
                 const SizedBox(height: 20),
                 ElevatedButton(
@@ -76,7 +80,11 @@ class StartScreen extends StatelessWidget {
                           builder: (context) => const SecondScreen()),
                     );
                   },
-                  child: const Text('get started'),
+                  child: const Text(
+                    'get started',
+                    style: TextStyle(
+                        color: Color(0xFF3A6FE2), fontWeight: FontWeight.bold),
+                  ),
                 ),
               ],
             ),
