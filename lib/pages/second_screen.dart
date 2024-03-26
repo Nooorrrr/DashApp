@@ -26,8 +26,6 @@ class SecondScreen extends StatelessWidget {
                       hintText: 'Search',
                       border: InputBorder.none,
                       prefixIcon: SizedBox(
-                        width: 5,
-                        height: 5,
                         child: SvgPicture.asset(
                           'assets/icons/search.svg',
                         ),

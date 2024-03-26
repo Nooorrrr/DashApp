@@ -50,7 +50,15 @@ class StartScreen extends StatelessWidget {
                       height: 250,
                     ),
                     const Text(
-                      'Welcome to Dash app',
+                      'Welcome to ',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 30,
+                      ),
+                    ),
+                    const Text(
+                      'Dash app',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.white,
