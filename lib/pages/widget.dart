@@ -7,13 +7,12 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 400,
-      width: 450,
+      height: 350,
       margin: const EdgeInsets.only(bottom: 15),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(25),
+        borderRadius: BorderRadius.circular(15),
         border: Border.all(
-          color: Colors.black, // Change the border color here
+          color: const Color(0xFF3A6FE2), // Change the border color here
           width: 2, // Optional: Change the border width
         ),
       ),
@@ -24,10 +23,13 @@ class MyWidget extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                SizedBox(
-                    height: 100,
-                    width: 100,
-                    child: Image.asset("assets/images/smallbird.png")),
+                Padding(
+                  padding: const EdgeInsets.only(right: 8, left: 8),
+                  child: SizedBox(
+                      height: 60,
+                      width: 30,
+                      child: Image.asset("assets/images/bigbird.png")),
+                ),
                 const Column(
                   children: [
                     Text(
@@ -49,14 +51,15 @@ class MyWidget extends StatelessWidget {
               ],
             ),
             const Text(
-                "hada text kbir wr ani n5elat drka it should be something like amoung the lines te3 loreum ipsum li till now mzal ma3labalish wsh m3ntha so yeah "),
+                "hada long text it should be something like amoung the lines te3 loreum ipsum li till now mzal ma3labalish wsh m3ntha so yeah "),
             Image.asset("assets/images/smallbird.png"),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 SizedBox(
+                  width: 200,
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       SvgPicture.asset("assets/icons/BookmarkSimple.svg"),
                       SvgPicture.asset("assets/icons/BookmarkSimple.svg"),
