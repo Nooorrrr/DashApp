@@ -12,8 +12,8 @@ class MyWidget extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
         border: Border.all(
-          color: const Color(0xFF3A6FE2), // Change the border color here
-          width: 2, // Optional: Change the border width
+          color: const Color(0xFF3A6FE2), 
+          width: 2, 
         ),
       ),
       child: Padding(
